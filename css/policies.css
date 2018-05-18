@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'QuattroH';
+    src: url('../font/quattrocento/Quattrocento-Bold.ttf')format('treutype'), url('../font/quattrocento/Quattrocento-Regular.ttf')format('truetype');
+}
+
+@font-face {
+    font-family: 'QuattroP';
+    src: url('../font/quattrocentosans/QuattrocentoSans-Bold.ttf')format('truetype'), url('../font/quattrocentosans/QuattrocentoSans-BoldItalic.ttf')format('truetype'), url('../font/quattrocentosans/QuattrocentoSans-Italic.ttf')format('truetype'), url('../font/quattrocentosans/QuattrocentoSans-Regular.ttf')format('truetype'),
+}

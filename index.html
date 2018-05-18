@@ -1,0 +1,476 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Cv Pol Mickael</title>
+
+        <!-- Bootstrap CSS -->
+        <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="font/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/size.css">
+        <!-- link policies style -->
+        <link rel="stylesheet" href="css/policies.css">
+        <!-- Add my style css -->
+        <link href="css/app.css" rel="stylesheet">
+        
+    </head>
+    <body>
+
+        <!-- header -->
+        <div class="container-fluid">
+            <div class="row">
+                <div id="photoProfil" class="col-xs-12 hidden-lg">
+                    <!-- requete ajax pour recuperer la photo de profil -->
+                    <div id="loader" class="loader center-block"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container margeTop marginBot">
+            <div class="row">
+                <div id="photoProfil2" class="col-lg-4 hidden-xs">
+                    <div id="loader2" class="loader center-block"></div>
+                </div>
+        
+                <div class="col-lg-8 col-xs-12">
+                    <div class="row">
+                        <div class="col-lg-10 col-xs-12 nP">
+                            <p>Pol Mickael</p>
+                        </div>
+                        <button id="cvPdf" data-toggle="modal" data-target="#myModal" title="Telecharger le cv en pdf" class="col-lg-2 col-xs-12 np2 text-center dlCv">
+                            <a download="CV2016.pdf" href="CV2016.pdf">
+                                <i class="fa fa-download" aria-hidden="true"></i>
+                            </a>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-xs-12">
+                    <div class="row">
+                        <div class="col-lg-10 col-xs-12 poste np4 nP">
+                            <p>Developpeur Logiciel junior</p>
+                        </div>
+                        <a title="aller sur mon repo github" target="blank" href="https://github.com/mickaelpol?tab=repositories">
+                            <div class="col-lg-2 col-xs-12 np3 text-center">
+                                <i class="fa fa-github" aria-hidden="true"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+        
+                <div class="col-lg-8 col-lg-offset-4 col-xs-12">
+                    <div class="text-center text-capitalize">
+                        <div class="row">
+                            <a id="homeClick" onclick="return false;" href="#">
+                                <div class="col-lg-offset-2 col-lg-2 col-xs-12 vert">
+                                    <span class="glyphicon glyphicon-home"></span>
+                                    </br>
+                                    <small>accueil</small>
+                                </div>
+                            </a>
+                            <a id="compClick" onclick="return false;" href="#">
+                                <div class="col-lg-2 col-xs-12 jaune">
+                                    <span class="glyphicon glyphicon-map-marker"></span>
+                                    </br>
+                                    <small>compétences</small>
+                                </div>
+                            </a>
+                            <a id="xpClick" onclick="return false;" href="#">
+                                <div class="col-lg-2 col-xs-12 violet">
+                                    <span class="glyphicon glyphicon-briefcase"></span>
+                                    </br>
+                                    <small>expériences</small>
+                                </div>
+                            </a>
+                            <a href="?p=diplomes">
+                                <div class="col-lg-2 col-xs-12 bleu">
+                                    <span class="glyphicon glyphicon-education"></span>
+                                    </br>
+                                    <small>diplomes</small>
+                                </div>
+                            </a>
+                            <a href="?p=projet">
+                                <div class="col-lg-2 col-xs-12 orange">
+                                    <span class="glyphicon glyphicon-map-marker"></span>
+                                    </br>
+                                    <small>projet</small>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- header -->
+
+        <!-- body -->
+        <!--///////////////////////// DEBUT PAGE ACCUEIL ///////////////////////// -->
+        <div id="home" class="container">
+            <div class="row gridus">
+                <div>
+                    <div class="col-lg-6 text-uppercase text-left">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <h2 class="Pbleu">Développeur Web et mobile junior</h2>
+                                <small class="Pbleu">Résumé du CV</small>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12 margeTop">
+                                <div class="col-lg-2">
+                                    <span class="glyphicon glyphicon-user"></span>
+                                </div>
+                                <div class="col-lg-10">
+                                    <h4>A Porpos de moi</h4>
+                                </div>
+                                <div class="col-lg-10 col-lg-offset-2">
+                                    <p class="text-justify">
+                                        Dans le batiment depuis 10 ans, je me suis lancer dans le développement web par passion, par goût d'apprendre de nouvelle chose et avoir de nouvelles opportunités. <br>
+                                        <div class="page-header"></div>
+                                        J'ai suivi le parcour de formation développeur web et mobile simplon pendant 10 mois comprenant 2 periode de projet pédagogique de 2 semaines et d'une période de stage de 2 mois.
+                                        Aujourd'hui je suis a l'aise sur plusieur techno et pour travailler en équipe comme tout seul pour la veille techno.<br>
+                                        <div class="page-header"></div>
+                                        J'aime beaucoup les projets novateur, tout se qui touche à la réalité augmenté, réalité virtuelle.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /////////////////////// personal info ////////////////////// -->
+                    <div class="col-lg-6 text-center PersonalInfo bordArrondis">
+                        <div class="row text-uppercase">
+                            <h2>personal info</h2>
+                        </div>
+                        <div class="row text-justify infoPerso">
+                            <div class="col-lg-6 col-lg-offset-1 text-uppercase text-left">
+                                <p>nom :</p>
+                            </div>
+                            <div class="col-lg-5">
+                                <p class="persoText">Pol Mickael</p>
+                            </div>
+                        </div>
+                        <div class="row text-justify">
+                            <div class="col-lg-5 col-lg-offset-1 text-uppercase text-left">
+                                <p>date de naissance :</p>
+                            </div>
+                            <div class="col-lg-5">
+                                <p class="persoText">9 Aout 1989</p>
+                            </div>
+                        </div>
+                        <div class="row text-center">
+                            <div class="col-lg-5 col-lg-offset-1 text-uppercase text-left">
+                                <p>adresse :</p>
+                            </div>
+                            <div class="col-lg-5 text-left">
+                                <p class="persoText">18 Rue de cugnaux</p>
+                            </div>
+                        </div>
+                        <div class="row text-center">
+                            <div class="col-lg-5 col-lg-offset-1 text-uppercase text-left">
+                                <p>Code postal :</p>
+                            </div>
+                            <div class="col-lg-5 text-left">
+                                <p class="persoText">31300 Toulouse</p>
+                            </div>
+                        </div>
+                        <div class="row text-center">
+                            <div class="col-lg-5 col-lg-offset-1 text-uppercase text-left">
+                                <p>tel :</p>
+                            </div>
+                            <div class="col-lg-5 text-left">
+                                <p class="persoText">07-81-94-81-13</p>
+                            </div>
+                        </div>
+                        <div class="row text-center">
+                            <div class="col-lg-5 col-lg-offset-1 text-uppercase text-left">
+                                <p>email :</p>
+                            </div>
+                            <div class="col-lg-5 text-left">
+                                <p class="persoText mail">mickael.devweb@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!--///////////////////////// FIN PAGE ACCUEIL ///////////////////////// -->
+        
+        <!--///////////////////////// DEBUT PAGE COMPETENCES ///////////////////////// -->
+        
+        <div id="comp" class="container margeTop">
+            <div class="row">
+        
+                <div class="col-lg-12 skills bordArrondis padBot">
+                    <h2 class="text-uppercase">compétences</h2>
+                    </br>
+                    <div class="row padBot">
+                        <div class="col-lg-4">
+                            <img class="css center-block" src="http://divinitycomputing.com/wp-content/uploads/2015/12/css.png" alt="">
+                            </br>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
+                                    style="width:80%">
+                                    80%
+                                </div>
+                            </div>
+                            <h3 class="text-center">install</h3>
+                            <p class="persoText">A prototype is an early sample, model, or release of a product built to test ...</p>
+                            <button type="button" class="center-block btn btn-sm btn-primary">learn more</button>
+                        </div>
+        
+                        <div class="col-lg-4">
+                            <img class="css center-block" src="https://blog.netapsys.fr/wp-content/uploads/2016/07/jquery.gif" alt="">
+                            </br>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
+                                    style="width:80%">
+                                    80%
+                                </div>
+                            </div>
+                            <h3 class="text-center">install</h3>
+                            <p class="persoText">A prototype is an early sample, model, or release of a product built to test ...</p>
+                            <button type="button" class="center-block btn btn-sm btn-primary">learn more</button>
+                        </div>
+        
+                        <div class="col-lg-4">
+                            <img class="css center-block" src="https://www.grafikart.fr/uploads/formations/15.png" alt="">
+                            </br>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
+                                    style="width:80%">
+                                    80%
+                                </div>
+                            </div>
+                            <h3 class="text-center">install</h3>
+                            <p class="persoText">A prototype is an early sample, model, or release of a product built to test ...</p>
+                            <button type="button" class="center-block btn btn-sm btn-primary">learn more</button>
+                        </div>
+                    </div>
+        
+                    <div class="row">
+                        <div class="col-lg-offset-1 col-lg-10 page-header margeComp padBot"></div>
+                    </div>
+        
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <img class="css center-block" src="http://divinitycomputing.com/wp-content/uploads/2015/12/css.png" alt="">
+                            </br>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
+                                    style="width:80%">
+                                    80%
+                                </div>
+                            </div>
+                            <h3 class="text-center">install</h3>
+                            <p class="persoText">A prototype is an early sample, model, or release of a product built to test ...</p>
+                            <button type="button" class="center-block btn btn-sm btn-primary">learn more</button>
+                        </div>
+                        <div class="col-lg-4">
+                            <img class="css center-block" src="https://blog.netapsys.fr/wp-content/uploads/2016/07/jquery.gif" alt="">
+                            </br>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
+                                    style="width:80%">
+                                    80%
+                                </div>
+                            </div>
+                            <h3 class="text-center">install</h3>
+                            <p class="persoText">A prototype is an early sample, model, or release of a product built to test ...</p>
+                            <button type="button" class="center-block btn btn-sm btn-primary">learn more</button>
+        
+                        </div>
+                        <div class="col-lg-4">
+                            <img class="css center-block" src="https://www.grafikart.fr/uploads/formations/15.png" alt="">
+                            </br>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
+                                    style="width:80%">
+                                    80%
+                                </div>
+                            </div>
+                            <h3 class="text-center">install</h3>
+                            <p class="persoText">A prototype is an early sample, model, or release of a product built to test ...</p>
+                            <button type="button" class="center-block btn btn-sm btn-primary">learn more</button>
+                        </div>
+                    </div>
+        
+        
+                </div>
+            </div>
+        </div>
+        
+        <!--///////////////////////// FIN PAGE COMPETENCES ///////////////////////// -->
+        
+        <!--///////////////////////// DEBUT PAGE EXPERIENCES ///////////////////////// -->
+        
+        <div id="xp" class="container margeTop">
+            <div class="row">
+                <div class="col-lg-12 xP bordArrondis">
+                    <h2 class="text-uppercase ">
+                        experiences pro
+                    </h2>
+                    </br>
+                    <blockquote>
+                        <small class="date">02/2015</small>
+                        <p class="xpDate">lorem ipsum</p>
+        
+                        <small class="date">02/2015</small>
+                        <p class="xpDate">lorem ipsum</p>
+        
+                        <small class="date">02/2015</small>
+                        <p class="xpDate">lorem ipsum</p>
+        
+                        <small class="date">02/2015</small>
+                        <p class="xpDate">lorem ipsum</p>
+        
+                        <small class="date">02/2015</small>
+                        <p class="xpDate">lorem ipsum</p>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+        
+        <!--///////////////////////// FIN PAGE EXPERIENCES ///////////////////////// -->
+        
+        <!--///////////////////////// DEBUT PAGE CV A4 ///////////////////////// -->
+        
+        <div class="container">
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" role="dialog">
+                <div class="modal-dialog">
+        
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Modal Header</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p class="text-center text-success">Merci d'avoir télécharger mon CV</p>
+                            <br>
+                            <p class="text-center">J'espère prendre contact avec vous prochainement.
+                                <br> M Pol Mickael
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!--///////////////////////// FIN PAGE CV A4 ///////////////////////// -->
+
+        <!-- body -->
+
+        <!-- footer -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        
+        <footer>
+            <div class="container">
+                <div class="row">
+        
+                    <div class="col-lg-2 col-lg-offset-1 col-md-2 col-md-offset-1 col-sm-6 col-xs-12">
+                        <ul class="footer-list">
+                            <span>Adresse</span>
+                            <li>
+                                <p>18 Rue de cugnaux</p>
+                                <p>Appartement B 324</p>
+                                <p>31300 Toulouse</p>
+                            </li>
+        
+                            <li>
+                                <p>07 81 94 81 13</p>
+                            </li>
+        
+                            <li>
+                                <a href="mailto:mickael.devweb@gmail.com?subject=Contact via CV en ligne&body=Entrez votre message ici">me contacter</a>
+                            </li>
+        
+                        </ul>
+                    </div>
+        
+        
+        
+                    <div class="col-lg-2 col-lg-offset-2 col-md-2 col-sm-6 col-xs-12">
+                        <ul class="footer-list">
+                            <span>Menu</span>
+                            <li>
+                                <a href="?p=home">Accueil</a>
+                            </li>
+        
+                            <li>
+                                <a href="?p=xp">Compétences</a>
+                            </li>
+        
+                            <li>
+                                <a href="?p=xp">Expériences</a>
+                            </li>
+        
+                            <li>
+                                <a href="?p=diplomes">Diplomes</a>
+                            </li>
+        
+                            <li>
+                                <a href="?p=contact">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+        
+                    <div class="col-lg-2 col-lg-offset-2 col-md-2 col-sm-6 col-xs-12">
+                        <ul class="social">
+                            <span>Social</span>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-facebook fa-2x"></i>
+                                </a>
+                            </li>
+        
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-github fa-2x"></i>
+                                </a>
+                            </li>
+        
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-linkedin fa-2x"></i>
+                                </a>
+                            </li>
+        
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-tumblr fa-2x"></i>
+                                </a>
+                            </li>
+        
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-google-plus fa-2x"></i>
+                                </a>
+                            </li>
+        
+                        </ul>
+                    </div>
+        
+        
+                </div>
+            </div>
+        </footer>
+
+        <!-- footer -->
+        
+
+        <!-- jQuery -->
+        <script src="node_modules/jquery/dist/jquery.min.js"></script>
+        <!-- Bootstrap JavaScript -->
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <!-- my Script -->
+        <script src="js/app.js"></script>
+        <script src="js/section.js"></script>
+    </body>
+</html>
