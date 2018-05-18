@@ -11,7 +11,7 @@ $(document).ready(function () {
         // type de document recuperer
         dataType: "json",
         // url du document récupérer
-        url: "http://spreadsheets.google.com/feeds/list/1-oYlvGP573O4ml4AzgapLhK_KoEqlfDIzvSnWz48_nQ/od6/public/values?alt=json",
+        url: "https://spreadsheets.google.com/feeds/list/1-oYlvGP573O4ml4AzgapLhK_KoEqlfDIzvSnWz48_nQ/od6/public/values?alt=json",
 
         // fonction qui gere la reussite de la recupération de la données voulu
         success: function (data) {
