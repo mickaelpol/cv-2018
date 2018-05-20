@@ -17,6 +17,8 @@
         <link rel="stylesheet" href="css/policies.css">
         <!-- Add my style css -->
         <link href="css/app.css" rel="stylesheet">
+        <!-- Add style for progress bar -->
+        <link href="css/corner.css" rel="stylesheet">
         <!-- favicon du CV -->
         <link rel="icon" type="image/png" href="icons8-cv-filled-50.png" />
         
@@ -26,7 +28,7 @@
         <!-- header -->
         <div class="container-fluid">
             <div class="row">
-                <div id="photoProfil" class="col-xs-12 hidden-lg">
+                <div id="photoProfil" class="col-xs-12 hidden-lg hidden-md">
                     <!-- requete ajax pour recuperer la photo de profil -->
                     <div id="loader" class="loader center-block"></div>
                 </div>
@@ -35,7 +37,7 @@
         
         <div class="container margeTop marginBot">
             <div class="row">
-                <div id="photoProfil2" class="col-lg-4 hidden-xs">
+                <div id="photoProfil2" class="col-lg-4 hidden-xs hidden-sm">
                     <div id="loader2" class="loader center-block"></div>
                 </div>
         
@@ -67,35 +69,35 @@
                 <div class="col-lg-8 col-lg-offset-4 col-xs-12">
                     <div class="text-center text-capitalize">
                         <div class="row">
-                            <a id="homeClick" onclick="return false;" href="#">
+                            <a id="homeClick" href="#">
                                 <div class="col-lg-offset-2 col-lg-2 col-xs-12 vert">
                                     <span class="glyphicon glyphicon-home"></span>
                                     </br>
                                     <small>accueil</small>
                                 </div>
                             </a>
-                            <a id="compClick" onclick="return false;" href="#">
+                            <a id="compClick" href="#">
                                 <div class="col-lg-2 col-xs-12 jaune">
                                     <span class="glyphicon glyphicon-map-marker"></span>
                                     </br>
                                     <small>compétences</small>
                                 </div>
                             </a>
-                            <a id="xpClick" onclick="return false;" href="#">
+                            <a id="xpClick" href="#">
                                 <div class="col-lg-2 col-xs-12 violet">
                                     <span class="glyphicon glyphicon-briefcase"></span>
                                     </br>
                                     <small>expériences</small>
                                 </div>
                             </a>
-                            <a href="?p=diplomes">
+                            <a id="dipClick" href="#">
                                 <div class="col-lg-2 col-xs-12 bleu">
                                     <span class="glyphicon glyphicon-education"></span>
                                     </br>
                                     <small>diplomes</small>
                                 </div>
                             </a>
-                            <a href="?p=projet">
+                            <a id="proClick" href="#">
                                 <div class="col-lg-2 col-xs-12 orange">
                                     <span class="glyphicon glyphicon-map-marker"></span>
                                     </br>
@@ -131,10 +133,12 @@
                                 </div>
                                 <div class="col-lg-10 col-lg-offset-2 lhText">
                                     <p class="text-justify">
-                                        Dans le batiment depuis 10 ans, je me suis lancer dans le développement web par passion, par goût d'apprendre de nouvelle chose et avoir de nouvelles opportunités. <br>
+                                        Dans le batiment depuis 10 ans, je me suis lancer dans le développement web par passion.
+                                        <br>
                                         <div class="page-header"></div>
-                                        J'ai suivi le parcour de formation développeur web et mobile simplon pendant 10 mois comprenant 2 periode de projet pédagogique de 2 semaines et d'une période de stage de 2 mois.
-                                        Aujourd'hui je suis a l'aise sur plusieur techno et pour travailler en équipe comme tout seul pour la veille techno.<br>
+                                        J'ai suivi le parcour de formation développeur web et mobile simplon pendant 10 mois.
+                                        Aujourd'hui je suis a l'aise sur plusieur techno, pour travailler en équipe et autonome pour la veille techno.
+                                        <br>
                                         <div class="page-header"></div>
                                         J'aime beaucoup les projets novateur, tout se qui touche à la réalité augmenté, réalité virtuelle.
                                         <br>
@@ -142,7 +146,7 @@
                                         De nature énergique et autonome, j'aime prendre les choses en main et je m'implique rapidement dans un projet.
                                         <br>
                                         <div class="page-header"></div>
-                                        De nature assez sociable j'aime travailler en équipe et pendants mes temps libre, profiter pour sortir et voirs des amis ou m'adonner à mes passe temps préféré
+                                        De nature assez sociable j'aime travailler en équipe et pendants mes temps libre, profiter de sortir pour voirs des amis ou m'adonner à mes passe temps préféré.
                                     </p>
                                 </div>
                             </div>
@@ -158,7 +162,7 @@
                                 <p>nom :</p>
                             </div>
                             <div class="col-lg-5">
-                                <p class="persoText text-left">Pol Mickael</p>
+                                <p class="fz18 text-left">Pol Mickael</p>
                             </div>
                         </div>
                         <div class="row text-justify">
@@ -166,7 +170,7 @@
                                 <p>date de naissance :</p>
                             </div>
                             <div class="col-lg-5">
-                                <p class="persoText">9 Aout 1989</p>
+                                <p class="fz18">9 Aout 1989</p>
                             </div>
                         </div>
                         <div class="row text-center">
@@ -174,7 +178,7 @@
                                 <p>adresse :</p>
                             </div>
                             <div class="col-lg-5 text-left">
-                                <p class="persoText">18 Rue de cugnaux</p>
+                                <p class="fz18">18 Rue de cugnaux</p>
                             </div>
                         </div>
                         <div class="row text-center">
@@ -182,7 +186,7 @@
                                 <p>Code postal :</p>
                             </div>
                             <div class="col-lg-5 text-left">
-                                <p class="persoText">31300 Toulouse</p>
+                                <p class="fz18">31300 Toulouse</p>
                             </div>
                         </div>
                         <div class="row text-center">
@@ -190,7 +194,7 @@
                                 <p>tel :</p>
                             </div>
                             <div class="col-lg-5 text-left">
-                                <p class="persoText">07-81-94-81-13</p>
+                                <p class="fz18">07 81 94 81 13</p>
                             </div>
                         </div>
                         <div class="row text-center">
@@ -198,7 +202,26 @@
                                 <p>email :</p>
                             </div>
                             <div class="col-lg-5 text-left">
-                                <p class="persoText mail">mickael.devweb@gmail.com</p>
+                                <p class="fz18 mail">mickael.devweb@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="row text-center">
+                            <div class="col-lg-5 col-lg-offset-1 text-uppercase text-left">
+                                <p>permis :</p>
+                            </div>
+                            <div class="col-lg-5 text-left">
+                                <p class="fz18 mail">Permis B</p>
+                            </div>
+                        </div>
+                        <div class="row text-center">
+                            <div class="col-lg-5 col-lg-offset-1 text-uppercase text-left">
+                                <p>langue :</p>
+                            </div>
+                            <div class="col-lg-5 text-left">
+                                <p class="fz18 mail">
+                                    <img class="icone" src="img/francais.png" alt="icone drapeau français">
+                                    <img class="icone" src="img/anglais.png" alt="icone drapeau anglais">
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -218,35 +241,26 @@
                     <div class="row padBot">
                         <div class="col-lg-4">
                             <h3 class="text-center">HTML5-CSS3</h3>
-                            <img class="css center-block" src="img/html5.png" alt="">
+                            <img class="css center-block" src="img/html5.png" alt="icone html css">
                             </br>
-                            <div class="progress">
-                                <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
-                                    style="width:80%">
-                                    80%
-                                </div>
+                            <div class="text-center fz30 star">
+                                <div id="starHtml"></div>
                             </div>
                         </div>
                         <div class="col-lg-4">
                             <h3 class="text-center">BOOTSTRAP</h3>
-                            <img class="css center-block" src="img/bootstrap.png" alt="">
+                            <img class="css center-block" src="img/bootstrap.png" alt="icone bootstrap">
                             </br>
-                            <div class="progress">
-                                <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
-                                    style="width:80%">
-                                    80%
-                                </div>
+                            <div class="text-center fz30 star">
+                                <div id="starBoot"></div>
                             </div>
                         </div>
                         <div class="col-lg-4">
                             <h3 class="text-center">JAVASCRIPT-JQUERY-AJAX</h3>
-                            <img class="css center-block" src="img/ajax-tutorial-javascript-jquery.jpg" alt="">
+                            <img class="css center-block" src="img/ajax-tutorial-javascript-jquery.jpg" alt="icone js jquery ajax">
                             </br>
-                            <div class="progress">
-                                <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
-                                    style="width:80%">
-                                    80%
-                                </div>
+                            <div class="text-center fz30 star">
+                                <div id="starJs"></div>
                             </div>
                         </div>
                     </div>
@@ -258,35 +272,26 @@
                     <div class="row padBot">
                         <div class="col-lg-4">
                             <h3 class="text-center">PHP-SYMFONY-LARAVEL</h3>
-                            <img class="css center-block" src="img/PHP-SymfonyVsLaravel.jpg" alt="">
+                            <img class="css center-block" src="img/PHP-SymfonyVsLaravel.jpg" alt="icone php symfony laravel">
                             </br>
-                            <div class="progress">
-                                <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
-                                    style="width:80%">
-                                    80%
-                                </div>
+                            <div class="text-center fz30 star">
+                                <div id="starPhp"></div>
                             </div>
                         </div>
                         <div class="col-lg-4">
                             <h3 class="text-center">MYSQL</h3>
-                            <img class="css center-block" src="img/MySQL.svg.png" alt="">
+                            <img class="css center-block" src="img/MySQL.svg.png" alt="icone mysql">
                             </br>
-                            <div class="progress">
-                                <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
-                                    style="width:80%">
-                                    80%
-                                </div>
+                            <div class="text-center fz30 star">
+                                <div id="starMysql"></div>
                             </div>
                         </div>
                         <div class="col-lg-4">
                             <h3 class="text-center">METHODE AGILES SCRUM</h3>
-                            <img class="css center-block" src="img/agile-pm-kanban-board.png" alt="">
+                            <img class="css center-block" src="img/agile-pm-kanban-board.png" alt="icone methode agiles">
                             </br>
-                            <div class="progress">
-                                <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
-                                    style="width:80%">
-                                    80%
-                                </div>
+                            <div class="text-center fz30 star">
+                                <div id="starScrum"></div>
                             </div>
                         </div>
                     </div>
@@ -298,34 +303,207 @@
         
         <!--///////////////////////// DEBUT PAGE EXPERIENCES ///////////////////////// -->
         
-        <div id="xp" class="container margeTop">
+        <div id="xp" class="container margeTop xP">
             <div class="row">
-                <div class="col-lg-12 xP bordArrondis">
+                <div class="col-lg-12">
                     <h2 class="text-uppercase ">
-                        experiences pro
+                        expériences
                     </h2>
                     </br>
                     <blockquote>
-                        <small class="date">02/2015</small>
-                        <p class="xpDate">lorem ipsum</p>
-        
-                        <small class="date">02/2015</small>
-                        <p class="xpDate">lorem ipsum</p>
-        
-                        <small class="date">02/2015</small>
-                        <p class="xpDate">lorem ipsum</p>
-        
-                        <small class="date">02/2015</small>
-                        <p class="xpDate">lorem ipsum</p>
-        
-                        <small class="date">02/2015</small>
-                        <p class="xpDate">lorem ipsum</p>
+                        <ul>
+                            <li class="date">
+                                <h3>
+                                    Développeur web et mobile, Innoside (31)
+                                    <span class="date fz18">&nbsp;&nbsp;&nbsp;&nbsp;02/2018 - 04/2018</span>
+                                </h3>
+                            </li>
+                            <ul class="list-unstyled lhTextP">
+                                <li>
+                                    - Etablissement du cahier des charges, Wireframe , MCD  et
+                                    MPD de la base de données
+                                </li>
+                                <li>
+                                    - Création du back-end  en relation avec la base de données 
+                                    pour une application mobile de réalité augmenté  avec des
+                                    routes api servant à envoyer et récupérer des informations
+                                    dans la base de données via l'application mobile
+                                </li>
+                                <li>
+                                    - Mise en place du front de l'application web pour créer un
+                                    accès utilisateur et admin sur le site servant de back-office à
+                                    l'application mobile.
+                                </li>
+                                <li>
+                                    - Le back-office gère le contenu ajouter à l'application
+                                    mobile  et les comptes utilisateurs/admin de l'application
+                                </li>
+                                <li>
+                                    - Lien de l'application web : "light"
+                                </li>
+                            </ul>
+                            <br>
+                            <li>
+                                <h3>
+                                    Monteur en gaine de ventilation (31)
+                                    <span class="date fz18">&nbsp;&nbsp;&nbsp;&nbsp;2015 - 2017</span>
+                                </h3>
+                            </li>
+                            <li>
+                                <h3>
+                                    Poseur parquet / terrasse / pergola (31)
+                                    <span class="date fz18">&nbsp;&nbsp;&nbsp;&nbsp;2014 - 2015</span>
+                                </h3>
+                            </li>
+                            <li>
+                                <h3>
+                                    Installateur génie climatique en intérim (31)
+                                    <span class="date fz18">&nbsp;&nbsp;&nbsp;&nbsp;2012 - 2014</span>
+                                </h3>
+                            </li>
+                            <li>
+                                <h3>
+                                    Service des eaux Cambounès (81)
+                                    <span class="date fz18">&nbsp;&nbsp;&nbsp;&nbsp;2011</span>
+                                </h3>
+                            </li>
+                            <li>
+                                <h3>
+                                    Apprentissage génie climatique SPIE (81)
+                                    <span class="date fz18">&nbsp;&nbsp;&nbsp;&nbsp;2008 - 2010</span>
+                                </h3>
+                            </li>
+                        </ul>
                     </blockquote>
                 </div>
             </div>
         </div>
         
         <!--///////////////////////// FIN PAGE EXPERIENCES ///////////////////////// -->
+        
+        
+        <!--///////////////////////// DEBUT PAGE DIPLOMES ///////////////////////// -->
+        
+        <div id="dip" class="container margeTop dip">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="text-uppercase ">
+                        Diplômes
+                    </h2>
+                    </br>
+                    <blockquote>
+                        <ul>
+                            <li class="date">
+                                <h3>
+                                    Certification d'état développeur web et mobile de niveau III (en cours)
+                                    <span class="date fz18">&nbsp;&nbsp;&nbsp;&nbsp;2017 - 2018</span>
+                                </h3>
+                            </li>
+                            <br>
+                            <li>
+                                <h3>
+                                    Formation énergie renouvelable AFPA
+                                    <span class="date fz18">&nbsp;&nbsp;&nbsp;&nbsp;2012</span>
+                                </h3>
+                            </li>
+                            <br>
+                            <li>
+                                <h3>
+                                    BAC Pro génie climatique
+                                    <span class="date fz18">&nbsp;&nbsp;&nbsp;&nbsp;2008 - 2010</span>
+                                </h3>
+                            </li>
+                            <br>
+                            <li>
+                                <h3>
+                                    BEP Plombier / Chauffagiste
+                                    <span class="date fz18">&nbsp;&nbsp;&nbsp;&nbsp;2006 - 2008</span>
+                                </h3>
+                            </li>
+                            <br>
+                            <li>
+                                <h3>
+                                    Brevet des collèges
+                                    <span class="date fz18">&nbsp;&nbsp;&nbsp;&nbsp;2006</span>
+                                </h3>
+                            </li>
+                        </ul>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+        
+        <!--///////////////////////// FIN PAGE DIPLOMES ///////////////////////// -->
+        
+        
+        <!--///////////////////////// DEBUT PAGE CONTACT ///////////////////////// -->
+        
+        <div id="pro" class="container margeTop pro">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="text-uppercase ">
+                        Projet
+                    </h2>
+                    <br>
+                    <ul class="list-unstyled">
+                        <div class="col-lg-3">
+                            <li>
+                                <a href="https://github.com/mickaelpol/loutrotter" target="blank">
+                                    <h3 class="text-center">
+                                        Loutrotter
+                                    </h3>
+                                </a>
+                                <p class="text-center">
+                                    (Projet pédagogique)
+                                </p>
+                                <img class="img-responsive css center-block" src="img/anglais.png" alt="">
+                            </li>
+                        </div>
+                        <div class="col-lg-3">
+                            <li>
+                                <a href="https://github.com/mickaelpol/ma_pause_mode" target="blank">
+                                    <h3 class="text-center">
+                                        Ma pause mode
+                                    </h3>
+                                </a>
+                                <p class="text-center">
+                                    (Projet pédagogique)
+                                </p>
+                                <img class="img-responsive css center-block" src="img/anglais.png" alt="">
+                            </li>
+                        </div>
+                        <div class="col-lg-3">
+                            <li>
+                                <a href="https://bitbucket.org/mystiick/light/src/master/" target="blank">
+                                    <h3 class="text-center">
+                                        Light by innoside
+                                    </h3>
+                                </a>
+                                <p class="text-center">
+                                    (Projet en période de stage / mis en ligne)
+                                </p>
+                                <img class="img-responsive css center-block" src="img/anglais.png" alt="">
+                            </li>
+                        </div>
+                        <div class="col-lg-3">
+                            <li>
+                                <a href="https://github.com/mickaelpol/Cv_Back_Symfony_Api_2018" target="blank">
+                                    <h3 class="text-center">
+                                        CV Personnel avec back office / api rest en symfony et front en angular
+                                    </h3>
+                                </a>
+                                <p class="text-center">
+                                    (en cours)
+                                </p>
+                                <img class="img-responsive css center-block" src="img/anglais.png" alt="">
+                            </li>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <!--///////////////////////// FIN PAGE CONTACT ///////////////////////// -->
         
         <!--///////////////////////// DEBUT PAGE CV A4 ///////////////////////// -->
         
@@ -465,6 +643,9 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <!-- my Script -->
         <script src="js/app.js"></script>
+        <!-- script de gestion de la navigation -->
         <script src="js/section.js"></script>
+        <!-- script de la progress bar -->
+        <script src="js/pace.js"></script>
     </body>
 </html>

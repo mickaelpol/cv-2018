@@ -316,14 +316,22 @@ a:hover {
     background-color: #EFEFEF;
 }
 
-.persoText {
-    font-size: 15px;
-}
-
 .xP {
     background-color: #9B59B6;
     color: #ffffff;
-    height: 400px;
+    height: auto;
+}
+
+.dip {
+    background-color: #3498DB;
+    color: #ffffff;
+    height: auto;
+}
+
+.pro {
+    background-color: #E67E22;
+    color: #ffffff;
+    height: auto;
 }
 
 .skills {
@@ -333,10 +341,6 @@ a:hover {
 
 .date {
     color: #ffffff;
-}
-
-.xpDate {
-    font-size: 18px;
 }
 
 .css {
@@ -391,4 +395,30 @@ a:hover {
 
 .lhText {
     line-height: 24px;
+}
+
+.percent {
+    color: #33383c;
+    font-weight: bold;
+}
+
+.gold {
+    color: gold;
+}
+
+.black {
+    color: #1a1a1ad2;
+}
+
+.star {
+    text-shadow: 0px 10px 12px rgba(5, 5, 5, 0.746);
+}
+
+.icone {
+    width: 30px;
+    height: auto;
+}
+
+.lhTextP {
+    line-height: 27px;
 }

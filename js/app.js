@@ -28,4 +28,28 @@ $(document).ready(function () {
 
     });
     //Fin de ma requete ajax 
+
+
+    let starHtml = document.getElementById('starHtml');
+    let starBoot = document.getElementById('starBoot');
+    let starJs = document.getElementById('starJs');
+    let starPhp = document.getElementById('starPhp');
+    let starMysql = document.getElementById('starMysql');
+    let starScrum = document.getElementById('starScrum');
+
+
+    function addEtoile(emp, starGold, starBlack) {
+        let icoGold = `<i class="fa fa-star gold"></i>`;
+        let icoBlack = `<i class="fa fa-star black"></i>`;
+        emp.innerHTML = icoGold.repeat(starGold) + icoBlack.repeat(starBlack);
+    }
+
+    addEtoile(starHtml,4,1);
+    addEtoile(starBoot,5,0);
+    addEtoile(starJs,4,1);
+    addEtoile(starPhp,3,2);
+    addEtoile(starMysql,4,1);
+    addEtoile(starScrum,3,2);
+
+    
 });
