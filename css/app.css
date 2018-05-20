@@ -340,7 +340,8 @@ a:hover {
 }
 
 .css {
-    width: 30%;
+    width: auto;
+    height: 80px;
 }
 
 .bord {
@@ -357,7 +358,7 @@ a:hover {
 
 
 .margeComp {
-    margin-bottom: 60px;
+    margin-bottom: 30px;
 }
 
 .mail {
