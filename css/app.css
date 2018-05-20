@@ -388,3 +388,7 @@ a:hover {
         transform: rotate(360deg);
     }
 }
+
+.lhText {
+    line-height: 24px;
+}
